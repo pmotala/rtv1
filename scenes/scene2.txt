@@ -1,0 +1,141 @@
+SCENE:
+{
+	camera_pos (0, 0, -30);
+	camera_dir (0, 0, 1);
+}
+
+CONTENT:
+{
+//LIGHTS
+	OBJECT(light)
+	{
+		colour (10, 10, 10)
+		position (0, 0, -50)
+	}
+	OBJECT(light)
+	{
+		colour (100, 100, 100)
+		position (0, 0, 8)
+	}
+//
+
+//CEILING & FLOOR
+	OBJECT(plane)
+	{
+		colour (0, 255, 0)
+		normal (0, 90, 0)
+		distance -11
+	}
+	OBJECT(plane)
+	{
+		colour (0, 255, 0)
+		normal (0, -90, 0)
+		distance -11
+	}
+//
+
+//SIDE WALLS & BACK
+	OBJECT(plane)
+	{
+		colour (0, 255, 0)
+		normal (90, 0, 0)
+		distance -15
+	}
+	OBJECT(plane)
+	{
+		colour (0, 255, 0)
+		normal (-90, 0, 0)
+		distance -15
+	}
+	OBJECT(plane)
+	{
+		colour (0, 255, 0)
+		normal (0, 0, -90)
+		distance -30
+	}
+//
+
+//BOTTOM
+	OBJECT(sphere)
+	{
+		colour (0, 0, 255)
+		position (10, -10, 20)
+		size 4
+	}
+	OBJECT(sphere)
+	{
+		colour (0, 0, 255)
+		position (-10, -10, 20)
+		size 4
+	}
+	OBJECT(sphere)
+	{
+		colour (0, 0, 255)
+		position (10, -10, 0)
+		size 4
+	}
+	OBJECT(sphere)
+	{
+		colour (0, 0, 255)
+		position (-10, -10, 0)
+		size 4
+	}
+//
+
+//TOP
+	OBJECT(sphere)
+	{
+		colour (0, 0, 255)
+		position (10, 10, 20)
+		size 4
+	}
+	OBJECT(sphere)
+	{
+		colour (0, 0, 255)
+		position (-10, 10, 20)
+		size 4
+	}
+	OBJECT(sphere)
+	{
+		colour (0, 0, 255)
+		position (10, 10, 0)
+		size 4
+	}
+	OBJECT(sphere)
+	{
+		colour (0, 0, 255)
+		position (-10, 10, 0)
+		size 4
+	}
+//
+
+//PILLARS
+	OBJECT(cylinder)
+	{
+		colour (250, 0, 0)
+		position (-10, 0, 0)
+		rotation (0, 90, 0)
+		size 2
+	}
+	OBJECT(cylinder)
+	{
+		colour (250, 0, 0)
+		position (10, 0, 0)
+		rotation (0, 90, 0)
+		size 2
+	}
+	OBJECT(cylinder)
+	{
+		colour (250, 0, 0)
+		position (-10, 0, 20)
+		rotation (0, 90, 0)
+		size 2
+	}
+	OBJECT(cylinder)
+	{
+		colour (250, 0, 0)
+		position (10, 0, 20)
+		rotation (0, 90, 0)
+		size 2
+	}
+}

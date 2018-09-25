@@ -1,0 +1,46 @@
+SCENE:
+{
+	camera_pos (0, 0, -10);
+	camera_dir (0, 0, 1);
+}
+
+CONTENT:
+{
+//LIGHTS
+	OBJECT(light)
+	{
+		colour (150, 150, 150)
+		position (0, 5, -15)
+	}
+//
+
+//SCENE OBJECTS
+	OBJECT(sphere)
+	{
+		colour (0, 0, 255)
+		position (0, 0, 0)
+		size 1
+	}
+	OBJECT(plane)
+	{
+		colour (0, 255, 0)
+		normal (0, 90, 0)
+		distance -1
+	}
+	OBJECT(cylinder)
+	{
+		colour (255, 120, 0)
+		position (3, 0, 0)
+		rotation (0, 90, 0)
+		size 1
+	}
+	OBJECT(cone)
+	{
+		colour (200, 0, 0)
+		position (-3, 3, 0)
+		rotation (0, 90, 0)
+		size 6
+		angle 20
+	}
+//
+}

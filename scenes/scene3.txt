@@ -1,0 +1,51 @@
+SCENE:
+{
+	camera_pos (0, 0, -15);
+	camera_dir (0, 0, 1);
+}
+
+CONTENT:
+{
+	OBJECT(light)
+	{
+		colour (50, 50, 50)
+		position (0, 0, -10)
+	}
+	
+	OBJECT(sphere)
+	{
+		colour (100, 100, 100)
+		position (0, 0, 0)
+		size 3
+	}
+	OBJECT(plane)
+	{
+		colour (150, 150, 255)
+		normal (0, 90, 0)
+		distance -5
+	}
+	OBJECT(plane)
+	{
+		colour (150, 150, 250)
+		normal (0, -90, 0)
+		distance -5
+	}
+	OBJECT(plane)
+	{
+		colour (0, 255, 0)
+		normal (90, 0, 0)
+		distance -5
+	}
+	OBJECT(plane)
+	{
+		colour (0, 255, 0)
+		normal (-90, 0, 0)
+		distance -5
+	}
+	OBJECT(plane)
+	{
+		colour (0, 255, 0)
+		normal (0, 0, -90)
+		distance -5
+	}
+}
